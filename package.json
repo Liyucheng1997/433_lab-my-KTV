@@ -1,0 +1,21 @@
+{
+  "name": "my-ktv",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "网页版 KTV：包厢环境、点歌台、麦克风混响/回声、音准打分、开源曲库与在线歌词接入",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "index:opensongs": "node scripts/build-opensongs-index.mjs",
+    "download:opensongs": "node scripts/download-opensongs.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.4.5"
+  },
+  "dependencies": {
+    "idb-keyval": "^6.3.0",
+    "pinyin-pro": "^3.29.5"
+  }
+}
